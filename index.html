@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Login</title>
+
+    <head>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/index.css">
+    </head>
+    <body>
+        
+        
+
+            <section class="box">
+                    <input type="text" id="email" placeholder="Email">
+                    <input type="text" id="senha" placeholder="Senha">
+              
+                    <button id="entrar">
+                     Entrar
+                    </button>
+                    <button id="cadastro">
+                        Cadastrar-se
+                    </button>
+                    <a href="javascript:void(0)" id="recuperar" style="color: #fff; text-align: center; display: block;margin-top: 40px;">Esqueci a senha</a>
+            </section>
+
+            <!-- BOX COM FORM DE CADASTRO
+            
+            -->
+            <section id="cadastrar" style="display: none;">
+                <i class='far fa-arrow-alt-circle-left' id="back" style='font-size:36px;color: #fff;'></i>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="input-group flex-nowrap" class="email">
+                          <input type="text" class="form-control" placeholder="Nome" aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="input-group flex-nowrap">
+                          <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-group flex-nowrap" style="width: 400px !important; margin-left: 13px;">
+                      <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                    <div class="input-group flex-nowrap" style="width: 400px !important; margin-left: 13px;">
+                      <input type="text" class="form-control" placeholder="Senha" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                    <div class="input-group flex-nowrap" style="width: 400px !important; margin-left: 13px;">
+                      <input type="text" class="form-control" placeholder="Confirmar Senha" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                
+                    <button class="btn-entrar" style="width: 200px; height: 50px;">
+                      Pronto!
+                    </button>
+                    
+            </section>
+
+            <section id="recuperacao" style="display: none;">
+                <i class='far fa-arrow-alt-circle-left' id="backr" style='font-size:36px;color: #fff;'></i>
+                <p>Um código de 6 caractéres foi enviado ao seu email, digite-o:</p>
+                <input type="text" placeholder="">
+                <button class="btn-entrar" style="width: 200px; height: 50px; margin-top: 100px;">
+                    Pronto!
+                  </button> 
+                  <p align="center" style="margin-top: none;">Não recebeu?</p>
+                  <a id="envnov" style="text-align: center;display: block; color: #fff;" href="javascript:void(0)">Enviar novamente</a>
+            </section>
+        
+
+
+    </body>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.js"></script>
+</html>
